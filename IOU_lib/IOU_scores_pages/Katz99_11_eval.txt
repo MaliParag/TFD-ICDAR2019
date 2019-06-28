@@ -1,0 +1,26 @@
+#page num 11, gt_box:15, pred_box:24
+
+#COARSE DETECTION (iou>0.5):
+#number of correct prediction:12
+#correctly detected:['gt_1', 'gt_2', 'gt_3', 'gt_4', 'gt_5', 'gt_7', 'gt_11', 'gt_12', 'gt_13', 'gt_14', 'gt_15']
+
+#FINE DETECTION (iou>0.75):
+#number of correct prediction:11
+#correctly detected:['gt_1', 'gt_2', 'gt_3', 'gt_4', 'gt_5', 'gt_7', 'gt_11', 'gt_12', 'gt_13', 'gt_14', 'gt_15']
+
+#Sorted IOU scores for each GT box:
+gt_1,(0.95 det_2),(0 det_1),(0 det_3),(0 det_4),(0 det_5),(0 det_6),(0 det_7),(0 det_8),(0 det_9),(0 det_10),(0 det_11),(0 det_12),(0 det_13),(0 det_14),(0 det_15),(0 det_16),(0 det_17),(0 det_18),(0 det_19),(0 det_20),(0 det_21),(0 det_22),(0 det_23),(0 det_24)
+gt_2,(1.0 det_1),(0 det_2),(0 det_3),(0 det_4),(0 det_5),(0 det_6),(0 det_7),(0 det_8),(0 det_9),(0 det_10),(0 det_11),(0 det_12),(0 det_13),(0 det_14),(0 det_15),(0 det_16),(0 det_17),(0 det_18),(0 det_19),(0 det_20),(0 det_21),(0 det_22),(0 det_23),(0 det_24)
+gt_3,(0.94 det_5),(0.1 det_3),(0.08 det_4),(0 det_1),(0 det_2),(0 det_6),(0 det_7),(0 det_8),(0 det_9),(0 det_10),(0 det_11),(0 det_12),(0 det_13),(0 det_14),(0 det_15),(0 det_16),(0 det_17),(0 det_18),(0 det_19),(0 det_20),(0 det_21),(0 det_22),(0 det_23),(0 det_24)
+gt_4,(0.99 det_6),(0 det_1),(0 det_2),(0 det_3),(0 det_4),(0 det_5),(0 det_7),(0 det_8),(0 det_9),(0 det_10),(0 det_11),(0 det_12),(0 det_13),(0 det_14),(0 det_15),(0 det_16),(0 det_17),(0 det_18),(0 det_19),(0 det_20),(0 det_21),(0 det_22),(0 det_23),(0 det_24)
+gt_5,(0.97 det_7),(0 det_1),(0 det_2),(0 det_3),(0 det_4),(0 det_5),(0 det_6),(0 det_8),(0 det_9),(0 det_10),(0 det_11),(0 det_12),(0 det_13),(0 det_14),(0 det_15),(0 det_16),(0 det_17),(0 det_18),(0 det_19),(0 det_20),(0 det_21),(0 det_22),(0 det_23),(0 det_24)
+gt_6,(0.19 det_10),(0.12 det_9),(0 det_1),(0 det_2),(0 det_3),(0 det_4),(0 det_5),(0 det_6),(0 det_7),(0 det_8),(0 det_11),(0 det_12),(0 det_13),(0 det_14),(0 det_15),(0 det_16),(0 det_17),(0 det_18),(0 det_19),(0 det_20),(0 det_21),(0 det_22),(0 det_23),(0 det_24)
+gt_7,(1.0 det_8),(0 det_1),(0 det_2),(0 det_3),(0 det_4),(0 det_5),(0 det_6),(0 det_7),(0 det_9),(0 det_10),(0 det_11),(0 det_12),(0 det_13),(0 det_14),(0 det_15),(0 det_16),(0 det_17),(0 det_18),(0 det_19),(0 det_20),(0 det_21),(0 det_22),(0 det_23),(0 det_24)
+gt_8,(0.47 det_11),(0 det_1),(0 det_2),(0 det_3),(0 det_4),(0 det_5),(0 det_6),(0 det_7),(0 det_8),(0 det_9),(0 det_10),(0 det_12),(0 det_13),(0 det_14),(0 det_15),(0 det_16),(0 det_17),(0 det_18),(0 det_19),(0 det_20),(0 det_21),(0 det_22),(0 det_23),(0 det_24)
+gt_9,(0.5 det_11),(0 det_1),(0 det_2),(0 det_3),(0 det_4),(0 det_5),(0 det_6),(0 det_7),(0 det_8),(0 det_9),(0 det_10),(0 det_12),(0 det_13),(0 det_14),(0 det_15),(0 det_16),(0 det_17),(0 det_18),(0 det_19),(0 det_20),(0 det_21),(0 det_22),(0 det_23),(0 det_24)
+gt_10,(0 det_1),(0 det_2),(0 det_3),(0 det_4),(0 det_5),(0 det_6),(0 det_7),(0 det_8),(0 det_9),(0 det_10),(0 det_11),(0 det_12),(0 det_13),(0 det_14),(0 det_15),(0 det_16),(0 det_17),(0 det_18),(0 det_19),(0 det_20),(0 det_21),(0 det_22),(0 det_23),(0 det_24)
+gt_11,(1.0 det_12),(0 det_1),(0 det_2),(0 det_3),(0 det_4),(0 det_5),(0 det_6),(0 det_7),(0 det_8),(0 det_9),(0 det_10),(0 det_11),(0 det_13),(0 det_14),(0 det_15),(0 det_16),(0 det_17),(0 det_18),(0 det_19),(0 det_20),(0 det_21),(0 det_22),(0 det_23),(0 det_24)
+gt_12,(0.97 det_14),(0 det_1),(0 det_2),(0 det_3),(0 det_4),(0 det_5),(0 det_6),(0 det_7),(0 det_8),(0 det_9),(0 det_10),(0 det_11),(0 det_12),(0 det_13),(0 det_15),(0 det_16),(0 det_17),(0 det_18),(0 det_19),(0 det_20),(0 det_21),(0 det_22),(0 det_23),(0 det_24)
+gt_13,(0.89 det_15),(0 det_1),(0 det_2),(0 det_3),(0 det_4),(0 det_5),(0 det_6),(0 det_7),(0 det_8),(0 det_9),(0 det_10),(0 det_11),(0 det_12),(0 det_13),(0 det_14),(0 det_16),(0 det_17),(0 det_18),(0 det_19),(0 det_20),(0 det_21),(0 det_22),(0 det_23),(0 det_24)
+gt_14,(0.97 det_16),(0 det_1),(0 det_2),(0 det_3),(0 det_4),(0 det_5),(0 det_6),(0 det_7),(0 det_8),(0 det_9),(0 det_10),(0 det_11),(0 det_12),(0 det_13),(0 det_14),(0 det_15),(0 det_17),(0 det_18),(0 det_19),(0 det_20),(0 det_21),(0 det_22),(0 det_23),(0 det_24)
+gt_15,(0.96 det_17),(0.96 det_18),(0 det_1),(0 det_2),(0 det_3),(0 det_4),(0 det_5),(0 det_6),(0 det_7),(0 det_8),(0 det_9),(0 det_10),(0 det_11),(0 det_12),(0 det_13),(0 det_14),(0 det_15),(0 det_16),(0 det_19),(0 det_20),(0 det_21),(0 det_22),(0 det_23),(0 det_24)

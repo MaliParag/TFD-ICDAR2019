@@ -1,0 +1,30 @@
+#page num 13, gt_box:19, pred_box:27
+
+#COARSE DETECTION (iou>0.5):
+#number of correct prediction:13
+#correctly detected:['gt_11', 'gt_14']
+
+#FINE DETECTION (iou>0.75):
+#number of correct prediction:2
+#correctly detected:['gt_11', 'gt_14']
+
+#Sorted IOU scores for each GT box:
+gt_1,(0.52 det_4),(0 det_1),(0 det_2),(0 det_3),(0 det_5),(0 det_6),(0 det_7),(0 det_8),(0 det_9),(0 det_10),(0 det_11),(0 det_12),(0 det_13),(0 det_14),(0 det_15),(0 det_16),(0 det_17),(0 det_18),(0 det_19),(0 det_20),(0 det_21),(0 det_22),(0 det_23),(0 det_24),(0 det_25),(0 det_26),(0 det_27)
+gt_2,(0.72 det_5),(0 det_1),(0 det_2),(0 det_3),(0 det_4),(0 det_6),(0 det_7),(0 det_8),(0 det_9),(0 det_10),(0 det_11),(0 det_12),(0 det_13),(0 det_14),(0 det_15),(0 det_16),(0 det_17),(0 det_18),(0 det_19),(0 det_20),(0 det_21),(0 det_22),(0 det_23),(0 det_24),(0 det_25),(0 det_26),(0 det_27)
+gt_3,(0.57 det_7),(0 det_1),(0 det_2),(0 det_3),(0 det_4),(0 det_5),(0 det_6),(0 det_8),(0 det_9),(0 det_10),(0 det_11),(0 det_12),(0 det_13),(0 det_14),(0 det_15),(0 det_16),(0 det_17),(0 det_18),(0 det_19),(0 det_20),(0 det_21),(0 det_22),(0 det_23),(0 det_24),(0 det_25),(0 det_26),(0 det_27)
+gt_4,(0.51 det_11),(0 det_1),(0 det_2),(0 det_3),(0 det_4),(0 det_5),(0 det_6),(0 det_7),(0 det_8),(0 det_9),(0 det_10),(0 det_12),(0 det_13),(0 det_14),(0 det_15),(0 det_16),(0 det_17),(0 det_18),(0 det_19),(0 det_20),(0 det_21),(0 det_22),(0 det_23),(0 det_24),(0 det_25),(0 det_26),(0 det_27)
+gt_5,(0.69 det_9),(0 det_1),(0 det_2),(0 det_3),(0 det_4),(0 det_5),(0 det_6),(0 det_7),(0 det_8),(0 det_10),(0 det_11),(0 det_12),(0 det_13),(0 det_14),(0 det_15),(0 det_16),(0 det_17),(0 det_18),(0 det_19),(0 det_20),(0 det_21),(0 det_22),(0 det_23),(0 det_24),(0 det_25),(0 det_26),(0 det_27)
+gt_6,(0.57 det_12),(0 det_1),(0 det_2),(0 det_3),(0 det_4),(0 det_5),(0 det_6),(0 det_7),(0 det_8),(0 det_9),(0 det_10),(0 det_11),(0 det_13),(0 det_14),(0 det_15),(0 det_16),(0 det_17),(0 det_18),(0 det_19),(0 det_20),(0 det_21),(0 det_22),(0 det_23),(0 det_24),(0 det_25),(0 det_26),(0 det_27)
+gt_7,(0.51 det_14),(0 det_1),(0 det_2),(0 det_3),(0 det_4),(0 det_5),(0 det_6),(0 det_7),(0 det_8),(0 det_9),(0 det_10),(0 det_11),(0 det_12),(0 det_13),(0 det_15),(0 det_16),(0 det_17),(0 det_18),(0 det_19),(0 det_20),(0 det_21),(0 det_22),(0 det_23),(0 det_24),(0 det_25),(0 det_26),(0 det_27)
+gt_8,(0.7 det_15),(0 det_1),(0 det_2),(0 det_3),(0 det_4),(0 det_5),(0 det_6),(0 det_7),(0 det_8),(0 det_9),(0 det_10),(0 det_11),(0 det_12),(0 det_13),(0 det_14),(0 det_16),(0 det_17),(0 det_18),(0 det_19),(0 det_20),(0 det_21),(0 det_22),(0 det_23),(0 det_24),(0 det_25),(0 det_26),(0 det_27)
+gt_9,(0.61 det_16),(0 det_1),(0 det_2),(0 det_3),(0 det_4),(0 det_5),(0 det_6),(0 det_7),(0 det_8),(0 det_9),(0 det_10),(0 det_11),(0 det_12),(0 det_13),(0 det_14),(0 det_15),(0 det_17),(0 det_18),(0 det_19),(0 det_20),(0 det_21),(0 det_22),(0 det_23),(0 det_24),(0 det_25),(0 det_26),(0 det_27)
+gt_10,(0 det_1),(0 det_2),(0 det_3),(0 det_4),(0 det_5),(0 det_6),(0 det_7),(0 det_8),(0 det_9),(0 det_10),(0 det_11),(0 det_12),(0 det_13),(0 det_14),(0 det_15),(0 det_16),(0 det_17),(0 det_18),(0 det_19),(0 det_20),(0 det_21),(0 det_22),(0 det_23),(0 det_24),(0 det_25),(0 det_26),(0 det_27)
+gt_11,(0.76 det_18),(0 det_1),(0 det_2),(0 det_3),(0 det_4),(0 det_5),(0 det_6),(0 det_7),(0 det_8),(0 det_9),(0 det_10),(0 det_11),(0 det_12),(0 det_13),(0 det_14),(0 det_15),(0 det_16),(0 det_17),(0 det_19),(0 det_20),(0 det_21),(0 det_22),(0 det_23),(0 det_24),(0 det_25),(0 det_26),(0 det_27)
+gt_12,(0.69 det_19),(0 det_1),(0 det_2),(0 det_3),(0 det_4),(0 det_5),(0 det_6),(0 det_7),(0 det_8),(0 det_9),(0 det_10),(0 det_11),(0 det_12),(0 det_13),(0 det_14),(0 det_15),(0 det_16),(0 det_17),(0 det_18),(0 det_20),(0 det_21),(0 det_22),(0 det_23),(0 det_24),(0 det_25),(0 det_26),(0 det_27)
+gt_13,(0.61 det_25),(0 det_1),(0 det_2),(0 det_3),(0 det_4),(0 det_5),(0 det_6),(0 det_7),(0 det_8),(0 det_9),(0 det_10),(0 det_11),(0 det_12),(0 det_13),(0 det_14),(0 det_15),(0 det_16),(0 det_17),(0 det_18),(0 det_19),(0 det_20),(0 det_21),(0 det_22),(0 det_23),(0 det_24),(0 det_26),(0 det_27)
+gt_14,(0.82 det_26),(0 det_1),(0 det_2),(0 det_3),(0 det_4),(0 det_5),(0 det_6),(0 det_7),(0 det_8),(0 det_9),(0 det_10),(0 det_11),(0 det_12),(0 det_13),(0 det_14),(0 det_15),(0 det_16),(0 det_17),(0 det_18),(0 det_19),(0 det_20),(0 det_21),(0 det_22),(0 det_23),(0 det_24),(0 det_25),(0 det_27)
+gt_15,(0 det_1),(0 det_2),(0 det_3),(0 det_4),(0 det_5),(0 det_6),(0 det_7),(0 det_8),(0 det_9),(0 det_10),(0 det_11),(0 det_12),(0 det_13),(0 det_14),(0 det_15),(0 det_16),(0 det_17),(0 det_18),(0 det_19),(0 det_20),(0 det_21),(0 det_22),(0 det_23),(0 det_24),(0 det_25),(0 det_26),(0 det_27)
+gt_16,(0.19 det_27),(0 det_1),(0 det_2),(0 det_3),(0 det_4),(0 det_5),(0 det_6),(0 det_7),(0 det_8),(0 det_9),(0 det_10),(0 det_11),(0 det_12),(0 det_13),(0 det_14),(0 det_15),(0 det_16),(0 det_17),(0 det_18),(0 det_19),(0 det_20),(0 det_21),(0 det_22),(0 det_23),(0 det_24),(0 det_25),(0 det_26)
+gt_17,(0.21 det_27),(0 det_1),(0 det_2),(0 det_3),(0 det_4),(0 det_5),(0 det_6),(0 det_7),(0 det_8),(0 det_9),(0 det_10),(0 det_11),(0 det_12),(0 det_13),(0 det_14),(0 det_15),(0 det_16),(0 det_17),(0 det_18),(0 det_19),(0 det_20),(0 det_21),(0 det_22),(0 det_23),(0 det_24),(0 det_25),(0 det_26)
+gt_18,(0.21 det_27),(0 det_1),(0 det_2),(0 det_3),(0 det_4),(0 det_5),(0 det_6),(0 det_7),(0 det_8),(0 det_9),(0 det_10),(0 det_11),(0 det_12),(0 det_13),(0 det_14),(0 det_15),(0 det_16),(0 det_17),(0 det_18),(0 det_19),(0 det_20),(0 det_21),(0 det_22),(0 det_23),(0 det_24),(0 det_25),(0 det_26)
+gt_19,(0.15 det_27),(0 det_1),(0 det_2),(0 det_3),(0 det_4),(0 det_5),(0 det_6),(0 det_7),(0 det_8),(0 det_9),(0 det_10),(0 det_11),(0 det_12),(0 det_13),(0 det_14),(0 det_15),(0 det_16),(0 det_17),(0 det_18),(0 det_19),(0 det_20),(0 det_21),(0 det_22),(0 det_23),(0 det_24),(0 det_25),(0 det_26)

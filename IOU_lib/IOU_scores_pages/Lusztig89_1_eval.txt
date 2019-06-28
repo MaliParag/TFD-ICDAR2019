@@ -1,0 +1,26 @@
+#page num 1, gt_box:15, pred_box:13
+
+#COARSE DETECTION (iou>0.5):
+#number of correct prediction:5
+#correctly detected:['gt_2', 'gt_5', 'gt_11', 'gt_12']
+
+#FINE DETECTION (iou>0.75):
+#number of correct prediction:4
+#correctly detected:['gt_2', 'gt_5', 'gt_11', 'gt_12']
+
+#Sorted IOU scores for each GT box:
+gt_1,(0 det_1),(0 det_2),(0 det_3),(0 det_4),(0 det_5),(0 det_6),(0 det_7),(0 det_8),(0 det_9),(0 det_10),(0 det_11),(0 det_12),(0 det_13)
+gt_2,(0.99 det_1),(0 det_2),(0 det_3),(0 det_4),(0 det_5),(0 det_6),(0 det_7),(0 det_8),(0 det_9),(0 det_10),(0 det_11),(0 det_12),(0 det_13)
+gt_3,(0.37 det_2),(0 det_1),(0 det_3),(0 det_4),(0 det_5),(0 det_6),(0 det_7),(0 det_8),(0 det_9),(0 det_10),(0 det_11),(0 det_12),(0 det_13)
+gt_4,(0 det_1),(0 det_2),(0 det_3),(0 det_4),(0 det_5),(0 det_6),(0 det_7),(0 det_8),(0 det_9),(0 det_10),(0 det_11),(0 det_12),(0 det_13)
+gt_5,(0.98 det_4),(0 det_1),(0 det_2),(0 det_3),(0 det_5),(0 det_6),(0 det_7),(0 det_8),(0 det_9),(0 det_10),(0 det_11),(0 det_12),(0 det_13)
+gt_6,(0 det_1),(0 det_2),(0 det_3),(0 det_4),(0 det_5),(0 det_6),(0 det_7),(0 det_8),(0 det_9),(0 det_10),(0 det_11),(0 det_12),(0 det_13)
+gt_7,(0 det_1),(0 det_2),(0 det_3),(0 det_4),(0 det_5),(0 det_6),(0 det_7),(0 det_8),(0 det_9),(0 det_10),(0 det_11),(0 det_12),(0 det_13)
+gt_8,(0.39 det_10),(0 det_1),(0 det_2),(0 det_3),(0 det_4),(0 det_5),(0 det_6),(0 det_7),(0 det_8),(0 det_9),(0 det_11),(0 det_12),(0 det_13)
+gt_9,(0.15 det_10),(0 det_1),(0 det_2),(0 det_3),(0 det_4),(0 det_5),(0 det_6),(0 det_7),(0 det_8),(0 det_9),(0 det_11),(0 det_12),(0 det_13)
+gt_10,(0.33 det_10),(0.01 det_9),(0 det_1),(0 det_2),(0 det_3),(0 det_4),(0 det_5),(0 det_6),(0 det_7),(0 det_8),(0 det_11),(0 det_12),(0 det_13)
+gt_11,(0.96 det_11),(0 det_1),(0 det_2),(0 det_3),(0 det_4),(0 det_5),(0 det_6),(0 det_7),(0 det_8),(0 det_9),(0 det_10),(0 det_12),(0 det_13)
+gt_12,(0.97 det_12),(0 det_1),(0 det_2),(0 det_3),(0 det_4),(0 det_5),(0 det_6),(0 det_7),(0 det_8),(0 det_9),(0 det_10),(0 det_11),(0 det_13)
+gt_13,(0.02 det_13),(0 det_1),(0 det_2),(0 det_3),(0 det_4),(0 det_5),(0 det_6),(0 det_7),(0 det_8),(0 det_9),(0 det_10),(0 det_11),(0 det_12)
+gt_14,(0.04 det_13),(0 det_1),(0 det_2),(0 det_3),(0 det_4),(0 det_5),(0 det_6),(0 det_7),(0 det_8),(0 det_9),(0 det_10),(0 det_11),(0 det_12)
+gt_15,(0.54 det_13),(0 det_1),(0 det_2),(0 det_3),(0 det_4),(0 det_5),(0 det_6),(0 det_7),(0 det_8),(0 det_9),(0 det_10),(0 det_11),(0 det_12)

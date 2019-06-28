@@ -1,0 +1,12 @@
+#page num 2, gt_box:1, pred_box:4
+
+#COARSE DETECTION (iou>0.5):
+#number of correct prediction:1
+#correctly detected:['gt_1']
+
+#FINE DETECTION (iou>0.75):
+#number of correct prediction:1
+#correctly detected:['gt_1']
+
+#Sorted IOU scores for each GT box:
+gt_1,(0.98 det_1),(0 det_2),(0 det_3),(0 det_4)

@@ -1,0 +1,16 @@
+#page num 25, gt_box:5, pred_box:7
+
+#COARSE DETECTION (iou>0.5):
+#number of correct prediction:3
+#correctly detected:['gt_2', 'gt_4']
+
+#FINE DETECTION (iou>0.75):
+#number of correct prediction:2
+#correctly detected:['gt_2', 'gt_4']
+
+#Sorted IOU scores for each GT box:
+gt_1,(0.62 det_1),(0 det_2),(0 det_3),(0 det_4),(0 det_5),(0 det_6),(0 det_7)
+gt_2,(0.96 det_2),(0 det_1),(0 det_3),(0 det_4),(0 det_5),(0 det_6),(0 det_7)
+gt_3,(0 det_1),(0 det_2),(0 det_3),(0 det_4),(0 det_5),(0 det_6),(0 det_7)
+gt_4,(0.96 det_3),(0 det_1),(0 det_2),(0 det_4),(0 det_5),(0 det_6),(0 det_7)
+gt_5,(0 det_1),(0 det_2),(0 det_3),(0 det_4),(0 det_5),(0 det_6),(0 det_7)
