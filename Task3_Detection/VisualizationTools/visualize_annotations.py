@@ -23,10 +23,10 @@ class Doc():
         :param row:
         :return: None
         '''
-        if int(row[0]) not in self.sheet_math_map:
-            self.sheet_math_map[int(row[0])] = []
+        if float(row[0]) not in self.sheet_math_map:
+            self.sheet_math_map[float(row[0])] = []
 
-        self.sheet_math_map[int(row[0])].append((float(row[1]), float(row[2]), float(row[3]), float(row[4])))
+        self.sheet_math_map[float(row[0])].append((float(row[1]), float(row[2]), float(row[3]), float(row[4])))
 
     def add_char_region(self, row):
         '''
@@ -34,10 +34,10 @@ class Doc():
         :param row:
         :return: None
         '''
-        if int(row[0]) not in self.sheet_char_map:
-            self.sheet_char_map[int(row[0])] = []
+        if float(row[0]) not in self.sheet_char_map:
+            self.sheet_char_map[float(row[0])] = []
 
-        self.sheet_char_map[int(row[0])].append((float(row[2]), float(row[3]), float(row[4]), float(row[5])))
+        self.sheet_char_map[float(row[0])].append((float(row[2]), float(row[3]), float(row[4]), float(row[5])))
 
     def read_file(self, filename, is_math = False):
         '''
@@ -176,6 +176,8 @@ if __name__ == '__main__':
             for filename in fileList:
                 if filename.endswith(".char"):
                     char_files[filename.split(".char")[0]] = os.path.join(args.char_dir, filename)
+                if filename.endswith(".csv"):
+                    char_files[filename.split(".csv")[0]] = os.path.join(args.char_dir, filename)
             break
 
 

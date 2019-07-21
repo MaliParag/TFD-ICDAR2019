@@ -26,7 +26,7 @@ def create_images_from_pdfs(pdf_dir, output_dir):
         output_path = os.path.join(output_dir, pdf_name)
         if not os.path.exists(output_path):
             os.makedirs(output_path)
-        pages = convert_from_path(os.path.join(pdf_dir, pdf_file), 150)
+        pages = convert_from_path(os.path.join(pdf_dir, pdf_file), 600)
         for i in range(len(pages)):
             pages[i].save(os.path.join(output_path, str(i + 1) + ".png"), 'PNG')
 

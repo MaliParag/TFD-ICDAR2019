@@ -9,7 +9,9 @@ import ntpath
 #import cStringIO 
 from io import BytesIO
 import shutil   
-
+import traceback
+import time 
+import random
 
 def read_file(filename, bboxes, flag):
     '''
@@ -27,7 +29,7 @@ def read_file(filename, bboxes, flag):
         if line.replace(' ', '') == '':
             continue
         splitLine = line.split(",")
-        idClass = int(splitLine[0])
+        idClass = int(float(splitLine[0]))
         if prev_page == -1:
             prev_page = idClass
         else:
@@ -93,8 +95,9 @@ def create_doc_bboxes_map(dir_path,flag):
         try:
             read_file(full_filepath, bboxes_map,flag)
         except Exception as e:
-            print('exception occurred in reading file',full_filepath, str(e))
-        
+            print('exception occurred in reading file',full_filepath, str(e), sys.exc_info())
+            traceback.print_exc()
+
         #if len(bboxes_map)==0:
         #    raise ValueError("Empty ground truths file or not in valid format")
         pdf_bboxes_map[filename] = copy.deepcopy(bboxes_map)
@@ -182,7 +185,7 @@ def count_true_box(pred_dict,thre):
     return count,final_dict
 
 
-def IoU_page_bboxes(gt_page_bboxes_map, det_page_bboxes_map, pdf_name,outdir=None):
+def IoU_page_bboxes(args, gt_page_bboxes_map, det_page_bboxes_map, pdf_name,outdir=None):
     '''
     Takes two maps containing page level bounding boxes for ground truth and detections for same PDF filename and
     computes IoU for each BBox in a page in GT against all BBoxes in the same page in detections and returns them in
@@ -209,7 +212,7 @@ def IoU_page_bboxes(gt_page_bboxes_map, det_page_bboxes_map, pdf_name,outdir=Non
         
         pdf_gt_boxes+=len(gt_boxes)
         pdf_det_boxes+=len(det_boxes)
-
+        
         pred_dict={}
         for gt_box in gt_boxes:
             ious = evaluator._getAllIOUs(gt_box, det_boxes) 
@@ -221,8 +224,12 @@ def IoU_page_bboxes(gt_page_bboxes_map, det_page_bboxes_map, pdf_name,outdir=Non
                 
             pred_dict[gt_box.getImageName()]=preds[0],labels[0],preds,labels
         
-        coarse,coarse_dict=count_true_box(pred_dict,0.5)
-        fine,fine_dict=count_true_box(pred_dict,0.75)
+        fine_t = args.fine_t
+        coarse_t = args.coarse_t
+
+        coarse,coarse_dict=count_true_box(pred_dict,coarse_t)
+        fine,fine_dict=count_true_box(pred_dict,fine_t)
+
         #count correct preds for coarse 0.5 and fine 0.75 in one page
         correct_pred_coarse= correct_pred_coarse+coarse
         correct_pred_fine= correct_pred_fine+fine
@@ -339,7 +346,7 @@ def pre_rec_calculate(count):
                 'coarse_f':round(f_c,4),'coarse_pre':round(pre_c,4),'coarse_rec':round(recall_c,4)}
     return scores
     
-def IOUeval(ground_truth, detections, outdir=None): #,
+def IOUeval(args, ground_truth, detections, outdir=None): #,
     
     keys=['allGTbox','correctDet_c','correctDet_f','allDet']
     info=dict.fromkeys(keys,0)
@@ -377,7 +384,7 @@ def IOUeval(ground_truth, detections, outdir=None): #,
         det_page_bboxes_map = det_pdfs_bboxes_map[pdf_name]
         gt_page_bboxes_map = gt_pdfs_bboxes_map[pdf_name]
               
-        coarse_true_det,fine_true_det,pdf_gt_boxes,pdf_det_boxes=IoU_page_bboxes(gt_page_bboxes_map, det_page_bboxes_map, pdf_name,outdir)
+        coarse_true_det,fine_true_det,pdf_gt_boxes,pdf_det_boxes=IoU_page_bboxes(args, gt_page_bboxes_map, det_page_bboxes_map, pdf_name,outdir)
         info['correctDet_c']=info['correctDet_c']+coarse_true_det
         info['correctDet_f']=info['correctDet_f']+fine_true_det
 
@@ -409,13 +416,18 @@ if __name__=='__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument("--detections", type=str, required=True, help="detections file path")
     parser.add_argument("--ground_truth", type=str, required=True, help="ground_truth file path")
+    parser.add_argument("--fine_t", type=float, required=False, default=0.75, help='fine IOU threshold')
+    parser.add_argument("--coarse_t", type=float, required=False, default=0.5, help='coarse IOU threshold')
+
     args = parser.parse_args()
 
     gt_file_name = args.ground_truth
     det_file_name = args.detections
-
-        
-    c_f,f_f=IOUeval(gt_file_name,det_file_name,outdir='IOU_scores_pages/')    
-     
- 
+    
+    time.sleep(random.random())
+    suffix = time.time()
+    c_f,f_f=IOUeval(args, gt_file_name,det_file_name,outdir='IOU_scores_pages_' + str(suffix))
+    
+    #shutil.rmtree('IOU_scores_pages_' + str(suffix))
+    
     
