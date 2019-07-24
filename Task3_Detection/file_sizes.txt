@@ -1,4 +1,3 @@
-%:                           cannot open `%' (No such file or directory)
 TMJ_1990_163_193/27.png:   PNG image data, 4092 x 6075, 8-bit/color RGB, non-interlaced
 TMJ_1990_163_193/31.png:   PNG image data, 4092 x 6075, 8-bit/color RGB, non-interlaced
 TMJ_1990_163_193/26.png:   PNG image data, 4092 x 6075, 8-bit/color RGB, non-interlaced
@@ -684,7 +683,6 @@ ActaM_1998_283_305/6.png:  PNG image data, 5175 x 6942, 8-bit/color RGB, non-int
 JMKU_1971_377_379/2.png:   PNG image data, 4288 x 6065, 8-bit/color RGB, non-interlaced
 JMKU_1971_377_379/1.png:   PNG image data, 4288 x 6065, 8-bit/color RGB, non-interlaced
 JMKU_1971_377_379/3.png:   PNG image data, 4288 x 6065, 8-bit/color RGB, non-interlaced
-out:                       ASCII text
 ASENS_1997_367_384/16.png: PNG image data, 5100 x 6601, 8-bit/color RGB, non-interlaced
 ASENS_1997_367_384/7.png:  PNG image data, 5100 x 6601, 8-bit/color RGB, non-interlaced
 ASENS_1997_367_384/10.png: PNG image data, 5100 x 6601, 8-bit/color RGB, non-interlaced
