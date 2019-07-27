@@ -1,6 +1,0 @@
-
-
-"GTDB_18files.txt": These 18 documents can be downloaded easily from command line : wget -P [outputDir] -i GTDB_18files.txt 
-
-"GTDB_29files.txt": for the rest of the articles you need to check the URLs and download them from there.
-
