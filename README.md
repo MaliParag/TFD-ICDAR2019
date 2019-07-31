@@ -35,6 +35,9 @@ The article pages were originally scanned at 600 dpi. Although we could not incl
 
 3) Use the GTs provided for test and train in the corresponding folders. Note that for test PDFs, character bounding boxes are provided without math/non-math labels. 
 
+
+`NOTE: If you find the bounding boxes are displayed from math regions, it is because the document image that you have rendered is of different size than the one used while annotating. datasetV2 provides file sizes for each image. Resize the image that you have rendered to the size provided in datasetV2 and you should be able to use the annotations.`
+
 ## Evaluation Tool
 
 We provide evalutation tool ```IOU_lib``` that calculates precision, recall and F-score for the detection results.
