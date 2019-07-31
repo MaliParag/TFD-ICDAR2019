@@ -58,6 +58,8 @@ Usage:python3 IOUevaluater.py --detections `detections` --ground_truth `ground_t
 
 ```convert_pdf_to_image.py``` converts PDF file into 600 DPI images.
 
+```easy_download.py``` provides tools to download PDF files used in the dataset.
+
 ## Contributors 
 
 Parag Mali and Puneeth Kukkadapu worked on the preparation of the ICDAR 2019 dataset. Puneeth Kukkadapu and Mahshad Madhavi developed tools for evaluation, download, and visualization. 
