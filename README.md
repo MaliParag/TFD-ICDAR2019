@@ -1,5 +1,8 @@
 # ICDAR 2019 Dataset for Typeset Math Formula Detection
 
+Developed at the [Document and Pattern Recognition Laboratory](https://www.cs.rit.edu/~dprl/index.html)  
+(Rochester Institute of Technology, USA)
+
 ## Introduction
 
 This dataset was used for Competition on Recognition of Handwritten Mathematical Expressions and Typeset Formula Detection (CROHME + TFD 2019) at the 15th International Conference on Document Analysis and Recognition (ICDAR 2019).
@@ -50,15 +53,18 @@ Usage:python3 IOUevaluater.py --detections `detections` --ground_truth `ground_t
 
 ```visualize_annotations.py``` visualize math regions and character regions from annotation files on images. Find this under VisualizationTools. 
 
-```GTDB_files.txt``` is a list of all 46 articles.
-
 ```convert_pdf_to_image.py``` converts PDF file into 600 DPI images.
 
 ## Contributors 
 
 Parag Mali and Puneeth Kukkadapu worked on the preparation of the ICDAR 2019 dataset. Puneeth Kukkadapu and Mahshad Madhavi developed tools for evaluation, download, and visualization. 
 
-Parag Mali created `Vesrion 2` of the ICDAR 2019 dataset after fixing many errors in ICDAR 2019. `Version 2` is available under directory `datasetV2`. `IOU_libV2` provides file level results and allows us to specify different IoU thresholds.    
+Parag Mali created `Vesrion 2` of the ICDAR 2019 dataset after fixing errors in ICDAR 2019. All the character annotations were updated to fit the characters and missing bounding boxes were added. `Version 2` is available under directory `datasetV2.zip`. `IOU_lib` in `Version 2` was updated to provide file level results and it allows us to specify different IoU thresholds. Other tools were updated to work with csv, math, and, char files. `Version 2` provides file sizes of images used to create annotations.
+
+## Related Publications
+
+M. Mahdavi, R. Zanibbi, H. Mouchere, and Utpal Garain (2019). [ICDAR 2019 CROHME + TFD: Competition on Recognition of Handwritten Mathematical Expressions and Typeset Formula Detection.](https://www.cs.rit.edu/~rlaz/files/CROHME+TFD%E2%80%932019.pdf) Proc. International Conference on Document Analysis and Recognition, Sydney, Australia (to appear).
+
 
 ## Acknowledgements
 
