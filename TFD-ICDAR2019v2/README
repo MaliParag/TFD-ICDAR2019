@@ -1,0 +1,3 @@
+In this dataset problems with ICDAR2019 TFD dataset are fixed. 
+IOU_lib is updated to support file-level results and allows us to specify different IOU thresholds. 
+It allows page numbers to be floating-point page numbers and supports both .math and .csv files.

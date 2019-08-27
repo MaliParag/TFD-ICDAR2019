@@ -1,0 +1,28 @@
+[Usage]
+
+python3 EvaluateMathRegions.py --detections <detections.csv> --ground_truth <ground_truths.csv>
+======================================================
+
+[Description]
+
+This tool can be used to evaluate IoU metric for predicted math regions against ground truth math regions. 
+For each document image, <detections.csv> contains predicted bounding box region information and
+<ground_truths.csv> contains ground truth bounding box information.
+
+Each line in the <detections.csv> or <ground_truths.csv>, corresponds to a bounding box for one math region. It consists
+of 5 attributes.
+
+math:   class_name ("math")
+x:      top left x-coordinate of the bounding box for the math region
+y:      top left y-coordinate of the bounding box for the math region
+width:  width of the bounding box for the math region
+height: height of the bounding box for the math region
+
+For each math region in <ground_truths.csv>, the IoU metric is computed for all of the predicted math regions in <detecions.csv> and
+a sorted list of (IoU, ground_truth, detection) returns in descending order.
+
+Please look at sample files in "detections" and "groundtruths" folders, to know more about input formats.
+======================================================
+Acknowledgements
+Thanks to Rafael Padilla.
+https://github.com/rafaelpadilla/Object-Detection-Metrics

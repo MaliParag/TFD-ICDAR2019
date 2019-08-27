@@ -1,0 +1,15 @@
+[Usage]: python3 visualize_annotations.py <image_dir> <math_dir> <output_dir> <char_dir>
+
+"visualize_annotations.py": visualize math regions and character regions on images. 
+
+(Character regions path is optional. If character regions are not given as input, then only math regions are visualized on document images.)
+
+This script takes 3 or 4 parameters.
+<image_dir>: directory path containing 600 DPI images.
+<math_dir>: directory path containing annotations for math regions (".math files")
+<output_dir>: directory path to store rendered images for corresponding PDF files.
+<char_dir>: directory path containing annotations for character regions (".char files")
+
+<char_dir> is optional parameter. 
+<math_dir> is optional to make char visualization possible on test set which does not have math annotations.
+-----------------------------------------------------------------------------------------

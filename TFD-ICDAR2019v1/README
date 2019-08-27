@@ -1,0 +1,44 @@
+[Description]
+
+The ground truth annotation provided in two formats
+(1) character level: bounding box of all characters are given with math/notmath labelling.
+(2) math regions: bounding box of math regions are provided for each page 
+
+The article pages were originally scanned at 600 dpi. Although we could not include the original document images of articles for copyright reasons, we provide the pdf URLs that we used to get the original documents.
+
+There are 36 PDFs in train containing 569 pages and 26395 math regions. Test set is made of 10 PDfs containing 236 pages and 11885 math regions. Please find train_files.txt and test_files.txt under corrosponding folders. 
+===========================================================================
+[Instruction]
+
+EasyDownload directory contains instructions to download all the required files. 
+
+1) Download all pdfs from the given URLs in GTDB_files.txt. Make sure the saved files have the name in the second column (for mapping with GT files).
+
+2) Convert pdfs to images using "convert_pdf_to_image.py"
+
+3) Use the GTs provided for test and train in the corresponding folders. Note that for test PDFs, character bounding boxes are provided without labels. 
+
+===========================================================================
+[Files]
+
+"visualize_annotations.py" visualize math regions and character regions from annotation files on images. find this under VisualizationTools. 
+
+"GTDB_files.txt": list of all 46 articles (GTDB-1 and GTDB-2 to). To view GTDB-2 (16 articles) and GTDB-1 (30 articles) separately, checkout the git repository.
+
+"convert_pdf_to_image.py": converts PDF file into 600 DPI images.
+
+[Usage]: python3 convert_pdf_to_image.py <PDF_files_dir> <output_dir>
+
+This script takes 2 parameters.
+<PDF_files_dir>: directory path containing PDF files.
+<output_dir>: directory path to store rendered images for corresponding PDF files.
+
+=====================================================
+The copyright and license holder of GTDB datasets is 
+Masakazu Suzuki:
+Science Accessibility Net, 
+Professor emeritus of Kyushu University
+
+****************************************************************
+GTDB dataset git repo: https://github.com/uchidalab/GTDB-Dataset
+****************************************************************
