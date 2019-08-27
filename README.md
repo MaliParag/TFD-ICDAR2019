@@ -1,4 +1,4 @@
-# ICDAR 2019 Dataset for Typeset Math Formula Detection
+# TFD-ICDAR 2019: A Dataset for Typeset Math Formula Detection
 
 Developed at the [Document and Pattern Recognition Laboratory](https://www.cs.rit.edu/~dprl/index.html)  
 (Rochester Institute of Technology, USA)
@@ -22,8 +22,14 @@ It was developed using the annotations from the [GTDB datasets](https://github.c
 
 The ground truth annotations are provided in two formats:
 
-1) character level: bounding box of all characters are given with math/not-math labelling.
-2) math regions: bounding box of math regions are provided for each page 
+1) character level: bounding box of all characters are given with math/not-math labelling. Each character record has following values -`1:Page number, 2:Character id, 3-7:bounding box (left, top, right, bottom), 8:ORDINARY_TEXT or MATH_SYMBOL, 9: Relationship with other math characters 10: Parent math character id 11: OCR code`
+
+For example `0,1,376.0,438.0,448.0,514.0,ORDINARY_TEXT,NONE,-1,0154`
+
+Relationships can be one of the following:
+`HORIZONTAL,RIGHT_SUB,RIGHT_SUP,LEFT_SUB,LEFT_SUP,UPPER,LOWER`
+
+2) math regions: bounding box of math regions are provided for each page. Each math record has following values - `1:Page number, 2-6: bounding box (left, top, right, bottom)`
 
 The article pages were originally scanned at 600 dpi. Although we could not include the original document images of articles for copyright reasons, we provide the pdf URLs that we used to get the original documents.
 
@@ -89,9 +95,9 @@ Masakazu Suzuki
 [Science Accessibility Net](http://www.sciaccess.net/en/),  
 Professor emeritus of Kyushu University
 
+We would also like to thank Rafael Padilla for the [intersection over union calculator](
+https://github.com/rafaelpadilla/Object-Detection-Metrics).
+
 ## Contact information
 
-Please direct questions or concerns regarding the dataset to 
-
-Parag Mali (psm2208@rit.edu)
-Richard Zanibbi (rxzvcs@rit.edu)
+Please direct questions or concerns regarding the dataset to Parag Mali (psm2208@rit.edu) or Richard Zanibbi (rxzvcs@rit.edu).
