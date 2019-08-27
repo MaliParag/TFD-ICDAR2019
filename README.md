@@ -82,7 +82,7 @@ For each math region in `ground_truths`, the IoU metric is computed for every ma
 
 ## Dataset versions
 
-`Vesrion 2` of the ICDAR 2019 dataset fixed errors in ICDAR 2019. All the character annotations were updated to fit the characters and missing bounding boxes were added. `Version 2` is available under directory `datasetV2.zip`. `IOU_lib` in `Version 2` was updated to provide file level results and it allows us to specify different IoU thresholds. Other tools were updated to work with csv, math, and, char files. `Version 2` provides file sizes of images used to create annotations.
+`TFD-ICDAR2019v1` was used in the ICDAR 2019 competition on the Tyepset Formula Detection (TFD). `Vesrion 2` of the ICDAR 2019 dataset fixed errors in ICDAR 2019. All the character annotations were updated to fit the characters and missing bounding boxes were added. `Version 2` is available under directory `TFD-ICDAR2019v2`. `IOU_lib` in `Version 2` was updated to provide file level results and it allows us to specify different IoU thresholds. Other tools were updated to work with csv, math, and, char files. `Version 2` provides file sizes of images used to create annotations.
 
 ## Related Publications
 
