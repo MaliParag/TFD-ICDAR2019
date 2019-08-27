@@ -1,3 +1,5 @@
+How to download files?
+-----------------------
 
 "GTDB_18files.txt": These 18 documents can be downloaded easily from command line : wget -P [outputDir] -i GTDB_18files.txt 
 

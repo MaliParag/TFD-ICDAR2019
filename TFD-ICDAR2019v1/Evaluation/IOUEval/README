@@ -1,3 +1,7 @@
+----------------------
+EvaluateMathRegions.py
+----------------------
+
 [Usage]
 
 python3 EvaluateMathRegions.py --detections <detections.csv> --ground_truth <ground_truths.csv>
