@@ -5,6 +5,10 @@ Developed at the [Document and Pattern Recognition Laboratory](https://www.cs.ri
 
 by Parag Mali, Puneeth Kukkadapu, Mahshad Madhavi
 
+<img src="https://github.com/maliparag/TFD-ICDAR2019/blob/master/Cc-by-nc-nd_icon.png"/>
+
+This dataset was created with permissions from the creators of the GTDB datasets. 
+
 ## Table of Contents
 - <a href='#introduction'>Introduction</a>
 - <a href='#dataset-statistics'>Dataset statistics</a>
