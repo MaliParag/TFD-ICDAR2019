@@ -3,7 +3,7 @@
 Developed at the [Document and Pattern Recognition Laboratory](https://www.cs.rit.edu/~dprl/index.html)  
 (Rochester Institute of Technology, USA)
 
-by Parag Mali, Puneeth Kukkadapu, Mahshad Madhavi
+by [Parag Mali](https://paragmali.me), Puneeth Kukkadapu, Mahshad Madhavi
 
 <img src="https://github.com/maliparag/TFD-ICDAR2019/blob/master/Cc-by-nc-nd_icon.png"/>
 
